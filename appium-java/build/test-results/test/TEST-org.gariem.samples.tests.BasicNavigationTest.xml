@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.gariem.samples.tests.BasicNavigationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-09-04T21:14:57" hostname="AMAC02WL4G0HV2L" time="11.814">
+<testsuite name="org.gariem.samples.tests.BasicNavigationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-09-04T21:20:18" hostname="AMAC02WL4G0HV2L" time="10.823">
   <properties/>
-  <testcase name="navigationTest" classname="org.gariem.samples.tests.BasicNavigationTest" time="11.814"/>
+  <testcase name="navigationTest" classname="org.gariem.samples.tests.BasicNavigationTest" time="10.823"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
