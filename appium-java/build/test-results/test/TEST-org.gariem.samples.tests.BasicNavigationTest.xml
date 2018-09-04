@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.gariem.samples.tests.BasicNavigationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-09-04T21:02:19" hostname="AMAC02WL4G0HV2L" time="21.307">
+  <properties/>
+  <testcase name="chargerTest" classname="org.gariem.samples.tests.BasicNavigationTest" time="21.307"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
