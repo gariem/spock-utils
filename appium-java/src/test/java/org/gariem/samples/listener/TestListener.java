@@ -1,14 +1,14 @@
 package org.gariem.samples.listener;
 
 import com.relevantcodes.extentreports.LogStatus;
-import org.gariem.samples.setup.BaseTest;
-import org.gariem.samples.setup.GetIp;
 import io.qameta.allure.Attachment;
-import org.gariem.samples.listener.extendManager.ExtendManager;
-import org.gariem.samples.listener.extendManager.ExtendTestManager;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.MDC;
+import org.gariem.samples.listener.extendManager.ExtendManager;
+import org.gariem.samples.listener.extendManager.ExtendTestManager;
+import org.gariem.samples.setup.BaseTest;
+import org.gariem.samples.setup.GetIp;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -54,9 +54,9 @@ public class TestListener extends BaseTest implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
         ExtendTestManager.startTest(result.getMethod().getMethodName(), "");
-        MDC.put("testMethodName",result.getName());
-        MDC.put("deviceName","Ahmet");
-        MDC.put("platformVersion","10.2");
+        MDC.put("testMethodName", result.getName());
+        MDC.put("deviceName", "Ahmet");
+        MDC.put("platformVersion", "10.2");
         MDC.put("appVersion", "3.4.1");
     }
 
@@ -74,14 +74,16 @@ public class TestListener extends BaseTest implements ITestListener {
         Object testClass = result.getInstance();
         WebDriver driver = ((BaseTest) testClass).getDriver();
         //Allure ScreenShotRobot and SaveTestLog
-        if (driver != null) {saveScreenshotPNG(driver);}
+        if (driver != null) {
+            saveScreenshotPNG(driver);
+        }
         //Save a log on allure.
         saveTextLog(getTestCaseName() + " failed and screenshot taken!");
         //Take base64Screenshot screenshot for extent reports
         assert ((TakesScreenshot) driver) != null;
         String screenshot = "data:image/png;base64," + ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
         //Extentreports log and screenshot operations for failed tests.
-        ExtendTestManager.getTest().log(LogStatus.FAIL, "Test Failed",ExtendTestManager.getTest().addBase64ScreenShot(screenshot));
+        ExtendTestManager.getTest().log(LogStatus.FAIL, "Test Failed", ExtendTestManager.getTest().addBase64ScreenShot(screenshot));
     }
 
     @Override
@@ -111,7 +113,7 @@ public class TestListener extends BaseTest implements ITestListener {
         //Log4j
         setTestFinishTime(TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()));
         setTestDurationTime(getTestFinishTime() - getTestStartTime());
-        MDC.put("testFailedMsg",getTestFailedMsg());
+        MDC.put("testFailedMsg", getTestFailedMsg());
         MDC.put("testDuration", getTestDurationTime());
         if (Objects.equals(getTestResult(), "PASSED")) {
             log.info(getTestResult());

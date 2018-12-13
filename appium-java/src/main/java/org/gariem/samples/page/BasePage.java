@@ -18,7 +18,7 @@ class BasePage {
     //Constructor
     public BasePage(AppiumDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver,30);
+        wait = new WebDriverWait(driver, 30);
     }
 
     void click(By element) throws InterruptedException {
@@ -39,6 +39,6 @@ class BasePage {
 
     void assertText(By element, String text) throws InterruptedException {
         wait.until(ExpectedConditions.presenceOfElementLocated(element));
-        Assert.assertEquals(driver.findElement(element).getText(),"");
+        Assert.assertEquals(driver.findElement(element).getText(), "");
     }
 }

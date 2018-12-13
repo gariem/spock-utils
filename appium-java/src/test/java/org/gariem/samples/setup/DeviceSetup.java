@@ -16,7 +16,7 @@ public class DeviceSetup extends BaseTest {
     static AppiumDriver prepareDevice() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("deviceName", "Samsung Galaxy S8");
-        caps.setCapability("udid", "ce03171379614c130c"); //DeviceId from "adb devices" command
+        caps.setCapability("udid", "33001cf7a8cab38b"); //DeviceId from "adb devices" command
         caps.setCapability("platformName", "Android");
         caps.setCapability("platformVersion", "7.0");
         caps.setCapability("skipUnlock", "true");

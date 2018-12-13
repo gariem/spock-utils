@@ -72,7 +72,7 @@ public class BaseTest {
     @BeforeSuite()
     public void setUp() throws MalformedURLException, InterruptedException, FileNotFoundException {
         DeviceSetup.prepareDevice();
-        wait = new WebDriverWait(driver,15);
+        wait = new WebDriverWait(driver, 15);
     }
 
     @AfterSuite

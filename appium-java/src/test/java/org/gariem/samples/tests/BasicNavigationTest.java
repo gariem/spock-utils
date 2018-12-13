@@ -21,10 +21,9 @@ public class BasicNavigationTest extends BaseTest {
 
     @Test
     @Severity(SeverityLevel.BLOCKER)
-    @Description("Test Description: Loads course list and asserts first course")
+    @Description("Test Description: Loads google maps and navigate to settings")
     @Story("Courses page")
     public void navigationTest() throws InterruptedException {
-        //Courses courses = new Courses(driver);
         MapsHome home = new MapsHome(driver);
         Settings settings = new Settings(driver);
         SideMenu menu = new SideMenu(driver);
