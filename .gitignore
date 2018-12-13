@@ -2,3 +2,5 @@ build/
 .idea/
 .gradle/
 out
+report.html
+testm.log
