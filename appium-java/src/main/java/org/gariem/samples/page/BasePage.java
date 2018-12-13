@@ -15,7 +15,6 @@ class BasePage {
     public WebDriverWait wait;
 
 
-    //Constructor
     public BasePage(AppiumDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, 30);
