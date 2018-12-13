@@ -4,3 +4,4 @@ build/
 out
 report.html
 testm.log
+.DS_Store
