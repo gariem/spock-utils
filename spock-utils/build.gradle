@@ -3,6 +3,8 @@ plugins {
     id 'java'
 }
 
+apply plugin: "maven"
+
 group 'org.gariem.utils'
 version '1.0-SNAPSHOT'
 
