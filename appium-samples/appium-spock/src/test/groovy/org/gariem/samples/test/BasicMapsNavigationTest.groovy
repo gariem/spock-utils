@@ -20,30 +20,30 @@ class BasicMapsNavigationTest extends BaseTest {
     }
 
     def 'Menu navigation to settings screen'() {
-        given:
+        given: 'I launch google maps'
         MapsHome mapsHome = new MapsHome(driver)
         SideMenu sideMenu = new SideMenu(driver)
         Settings settings = new Settings(driver)
 
-        when:
+        when: 'I go to the settings menu and return'
         mapsHome.clickOnMenuButton()
         sideMenu.clickOnSettingsOption()
         settings.clickOnReturnButton()
 
-        then:
+        then: 'No verification is done'
         true
     }
 
     def 'Maps navigation by search'() {
-        given:
+        given: 'I launch google maps'
         MapsHome mapsHome = new MapsHome(driver)
 
-        when:
+        when: 'I search for a place and click on the first result'
         mapsHome.searchByText(place)
         mapsHome.tapOnFirstResult()
         def actualPlaceName = mapsHome.getPlaceName()
 
-        then:
+        then: 'The place found is expected'
         actualPlaceName == expectedPlaceName
 
         where:
