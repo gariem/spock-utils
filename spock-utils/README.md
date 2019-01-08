@@ -1,13 +1,13 @@
 # Spock Utils
 
-This library provides basic data consumption and reporting for Spock by extending Spock Data Pipes and Extends-Reports mechanisms.
+This library provides basic data consumption and reporting for Spock by extending Spock Data Pipes and Extent-Reports mechanisms.
 
 ## Features
 
 Two main features are currently provided:
 
 - Extends the data pipe mechanism to allow data consumption from Excel and CSV files.
-- Provide a common interface for reporting to both Extend-Reports (.html) and Custom (.docx) destinations. 
+- Provide a common interface for reporting to both Extent-Reports (.html) and Custom (.docx) destinations. 
 
 ## Requirements
 
@@ -33,4 +33,4 @@ Once in your local repository, the spock-utils library can be included as a depe
 
 ## Usage
 
-Check out the [Examples]((../appium-samples)) for better reference.
+Check out the [Examples](../appium-samples) for better reference.

@@ -1,12 +1,12 @@
 # Appium examples
 
-All of the following examples perform basic interaction with the Google Maps application in android devices using the Appium server along other libraries such as TestNG, Spock and Extend Reports.
+All of the following examples perform basic interaction with the Google Maps application in android devices using the Appium server along other libraries such as TestNG, Spock and Extent Reports.
 
 ## About the examples:
 	
 Every inner folder contains a gradle project with a specific configuration, find below a brief description for each of them:
 
-- [Basic](appium-java): A simple example with google maps using TestNG and Extend Reports.
+- [Basic](appium-java): A simple example with google maps using TestNG and Extent Reports.
 - [Basic with Spock framework](appium-spock): Another simple example using Groovy and the Spock framework with BDD capabilities.
 - [Spock, Data Pipes, and Reports](appium-spock-with-reports): A more sophisticated example with Data Pipes and custom reporting provided by the 		spock-utils library.
 
