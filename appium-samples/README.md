@@ -1,6 +1,6 @@
 # Appium examples
 
-All of the following examples perform basic interaction with the Google Maps application in adroid devices using the Appium server along other libraries such as TestNG, Spock and Extend Reports.
+All of the following examples perform basic interaction with the Google Maps application in android devices using the Appium server along other libraries such as TestNG, Spock and Extend Reports.
 
 ## About the examples:
 	
@@ -37,9 +37,9 @@ Once Appium Desktop is installed, open the application and click on the "Start S
 
 - Make sure you have installed a proper driver for your device. Follow [these instructions from the Android Developer site](https://developer.android.com/studio/run/oem-usb) for more information.
 - Make sure Google Maps is installed in your testing device.
-- Enable developer mode in the device. You'll have to unhide it for the first time and then enable USB debugging. For instructions, follow [this Android Developer page](https://developer.android.com/studio/debug/dev-options#enable).
+- Enable developer mode in the device. You'll have to unhide it for the first time and then enable USB debugging. For instructions, check [this Android Developer page](https://developer.android.com/studio/debug/dev-options#enable).
 - Plug the device to the USB port.
-- Open a command window and type `adb devices`. You should see the ID of your connected device. Save the ID for later.
+- Open a command window and execute the `adb devices` command. You should see the ID of your connected device. Save the ID for later.
 
 ### 4: Gradle
 
