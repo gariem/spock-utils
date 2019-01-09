@@ -43,6 +43,6 @@ Once Appium Desktop is installed, open the application and click on the "Start S
 
 ### 4: Gradle
 
-All the projects use gradle as the build tool. You can download and install Gradle following [These instructions from the Gradle site](https://gradle.org/install/). You can also use the [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) with the gradlew.bat / gradlew files included in each project.
+All the projects use gradle as the build tool. You can download and install Gradle following [These instructions from the Gradle site](https://gradle.org/install/). You can also use the [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) with the `gradlew.bat` / `gradlew` files included in each project.
 
 As a simple verification, you can run `./gradle clean` inside the [Basic](appium-java) project. A build successful message should be displayed after a couple of seconds. 
