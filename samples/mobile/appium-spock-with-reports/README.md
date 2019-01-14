@@ -3,7 +3,7 @@ Internediate example with google maps using Spock, data pipes, and custom report
 
 ## Requirements
 
-In addition to the General Configuration which [can be found here](..), running this example requires building and installing the `spock-utils` project in your local repository. Follow [these steps](../../spock-utils#build-with-gradle) to build and install the `spock-utils` project.
+In addition to the General Configuration which [can be found here](../..), running this example requires building and installing the `spock-utils` project in your local repository. Follow [these steps](../../../spock-utils#build-with-gradle) to build and install the `spock-utils` project.
 
 - Make sure your Android device is connected. Developer options and USB debugging must be enabled.
 - Start the Appium server in default mode (local).

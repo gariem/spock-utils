@@ -3,7 +3,7 @@ A simple example with google maps using TestNG and Extent Reports.
 
 ## Requirements
 
-Running this example requires only the General Configuration which [can be found here](..).
+Running this example requires only the General Configuration which [can be found here](../..).
 
 - Make sure you have your Android device connected. Developer options and USB debugging must be enabled.
 - Start the Appium server in default mode (local).
