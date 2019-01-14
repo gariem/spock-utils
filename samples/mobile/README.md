@@ -2,6 +2,8 @@
 
 All of the following examples perform basic interaction with the Google Maps application in android devices using the Appium server along other libraries such as TestNG, Spock and Extent Reports.
 
+![Demo Video](gmaps_demo.gif)
+
 ## About the examples:
 	
 Every inner folder contains a gradle project with a specific configuration, find below a brief description for each of them:

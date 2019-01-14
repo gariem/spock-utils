@@ -15,8 +15,8 @@ public class Settings extends BasePage {
         super(driver);
     }
 
-    //private By returnButton = By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
-    private By returnButton = By.xpath("//android.widget.ImageButton[@content-desc=\"Subir\"]");
+    private By returnButton = By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
+    //private By returnButton = By.xpath("//android.widget.ImageButton[@content-desc=\"Subir\"]");
 
     public void clickOnReturnButton() throws InterruptedException {
         TimeUnit.SECONDS.sleep(2);

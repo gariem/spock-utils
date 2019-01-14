@@ -21,6 +21,7 @@ class BasicMapsNavigationTest extends BaseTest {
 
     def 'Menu navigation to settings screen'() {
         given: 'I launch google maps'
+
         MapsHome mapsHome = new MapsHome(driver)
         SideMenu sideMenu = new SideMenu(driver)
         Settings settings = new Settings(driver)
