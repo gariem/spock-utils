@@ -10,6 +10,7 @@ class BaseTest extends Specification {
     public static ChromeDriver driver
 
     def setup() {
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\k.morales.castillo\\driver\\chromedriver.exe")
         driver = new ChromeDriver()
     }
 
