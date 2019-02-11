@@ -2,16 +2,19 @@ package org.gariem.samples.test
 
 import org.gariem.samples.page.MapsHomePage
 import org.gariem.samples.page.UniqueSearchResultPage
+import org.gariem.samples.page.ListSearchPage
 import org.gariem.samples.setup.BaseTest
+import org.openqa.selenium.chrome.ChromeDriver
 import spock.lang.Title
 
 @Title("Basic map navigation")
 class BasicMapsNavigationTest extends BaseTest {
 
-
     def 'Menu navigation to settings screen'() {
         given: 'I navigate to the google maps site'
+
         MapsHomePage mapsHome = new MapsHomePage(driver)
+        ListSearchPage listSearch = new ListSearchPage(driver)
         UniqueSearchResultPage resultPage = new UniqueSearchResultPage(driver)
 
         driver.navigate().to("http://www.google.com/maps")
@@ -19,6 +22,8 @@ class BasicMapsNavigationTest extends BaseTest {
         when: 'Search for Accenture'
         mapsHome.enterSearchText("Accenture Perú")
         mapsHome.clickSearchButton()
+
+        listSearch.click()
 
         def placeTitle = resultPage.getPlaceTitle()
         def placeAddress = resultPage.getPlaceAddress()
