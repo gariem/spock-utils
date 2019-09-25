@@ -8,7 +8,7 @@ import static  groovyx.net.http.ContentType.JSON
 
 
 @Title("Basic map navigation")
-class BasicMapsNavigationTest extends Specification {
+class BasicApiTest extends Specification {
 
     RESTClient restClient = new RESTClient("http://localhost:8080", JSON)
 
@@ -48,4 +48,42 @@ class BasicMapsNavigationTest extends Specification {
 
     }
 
+    def 'post volunteer32'(){
+
+        given:
+        def requestBody = [psId: "456756",
+                           name: "Alejandro",
+                           email: "Alejandro@prueba.com",
+                           birthDate: "2020-05-25T04:07:37+00:00",
+                           phone: "+51958451258",
+                           gender: "M",
+                           district: "PL",
+                           occupation: "Developer"]
+
+        when:
+
+        def response1 = restClient.get(
+                path: '/volunteers',
+                requestContentType: JSON
+        )
+
+        def response2 = restClient.post(
+                path: '/volunteers',
+                body: requestBody,
+                requestContentType: JSON)
+
+        def response3 = restClient.get(
+                path: '/volunteers',
+                requestContentType: JSON
+        )
+
+        then:
+        response1.status == 200
+        response1.responseData.size()==3
+        response2.status == 200
+        response2.responseData.name == "Alejandro"
+        response2.status == 200
+        response3.responseData.size()==4
+
+    }
 }
