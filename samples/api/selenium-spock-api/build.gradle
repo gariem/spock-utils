@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+}
+
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+group 'org.gariem.samples'
+version '1.0-SNAPSHOT'
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+
+dependencies {
+
+    compile "org.codehaus.groovy:groovy-all:2.4.7"
+    compile "org.spockframework:spock-core:1.1-groovy-2.4"
+
+    compile "commons-io:commons-io:2.6"
+    compile "org.projectlombok:lombok:1.18.2"
+
+    compile "org.codehaus.groovy.modules.http-builder:http-builder:0.7.1"
+
+    testCompile("com.athaydes:spock-reports:1.6.1") {
+        transitive = false
+    }
+
+    testCompile "org.slf4j:slf4j-simple:1.7.13"
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+
+
+}
+
